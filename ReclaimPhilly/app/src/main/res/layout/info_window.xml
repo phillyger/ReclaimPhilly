@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="clip_vertical">
+
+    <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/default_padding"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_thumbnail_placeholder" />
+
+    <View
+            android:id="@+id/horizontal_divider"
+            android:layout_height="100dp"
+            android:layout_width="1dp"
+            android:layout_toRightOf="@id/thumbnail"
+            android:layout_marginRight="@dimen/default_padding"
+            android:background="@android:color/darker_gray"/>
+
+    <TextView
+            android:id="@+id/address"
+            android:layout_toRightOf="@id/horizontal_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/longitude"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/horizontal_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:id="@+id/latitude"
+            android:layout_below="@id/longitude"
+            android:layout_toRightOf="@id/horizontal_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <Button
+            android:id="@+id/bttn_report_location"
+            android:layout_below="@id/latitude"
+            android:layout_toRightOf="@id/horizontal_divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_location"/>
+
+
+
+</RelativeLayout>

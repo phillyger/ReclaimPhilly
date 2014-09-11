@@ -1,0 +1,59 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        applicationId "org.reclaimphilly.reclaimphilly"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String", "PARSE_APPLICATION_ID", parseDotComAppId
+        buildConfigField "String", "PARSE_CLIENT_KEY", parseDotComClientKey
+        buildConfigField "String", "PARSE_REST_API_KEY", parseDotComRestApiKey
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:20.+'
+    compile 'com.google.maps.android:android-maps-utils:0.3+'
+    compile(
+            'org.roboguice:roboguice:2.0',
+            'com.google.code.gson:gson:2.3',
+            'com.squareup.retrofit:retrofit:1.6.1',
+            'com.squareup.picasso:picasso:2.3.4',
+            'com.octo.android.robospice:robospice:1.4.13',
+            'com.octo.android.robospice:robospice-retrofit:1.4.13'
+    )
+    compile files('libs/Parse-1.6.0/Parse-1.6.0.jar')
+
+}

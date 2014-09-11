@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            >
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="4dp"
+                >
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/property_street_address"
+                    style="?android:listSeparatorTextViewStyle"/>
+
+            <ImageView android:id="@+id/property_imageView"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:adjustViewBounds="true"
+                       android:scaleType="centerInside"
+                       android:background="@android:color/darker_gray"
+                       android:cropToPadding="true"/>
+            <ImageButton android:id="@+id/property_imageButton"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:src="@android:drawable/ic_menu_camera"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Type/Structure"
+              style="?android:listSeparatorTextViewStyle"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/property_type_radio_group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <RadioButton android:id="@+id/property_radio_lot_type_lot"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/property_lot_type_lot_title_radio_bttn"
+
+                     />
+        <RadioButton android:id="@+id/property_radio_lot_type_res"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/property_lot_type_res_title_radio_bttn"
+                     />
+        <RadioButton android:id="@+id/property_radio_lot_type_nrs"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/property_lot_type_nrs_title_radio_bttn"
+                     />
+    </RadioGroup>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Description"
+              style="?android:listSeparatorTextViewStyle"/>
+
+    <EditText
+            android:id="@+id/property_description"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="3"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:hint="@string/property_description_hint"
+            />
+
+    <Button android:id="@+id/SubmitReportButton" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:onClick="submitReportButtonClick"
+            android:text="@string/property_property_submit_bttn" />
+
+</LinearLayout>
+</ScrollView>
