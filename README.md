@@ -11,4 +11,11 @@ https://play.google.com/store/apps/details?id=org.reclaimphilly.android&ah=W3KZE
 
 ###Screenshots
 
-![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rg-1.jpg)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-1.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-2.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-3.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-4.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-5.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-6.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-7.png)
+![](https://raw.githubusercontent.com/phillyger/ReclaimPhilly/master/resources/screenshots/rp-8.png)
